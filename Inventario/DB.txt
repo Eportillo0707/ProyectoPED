@@ -1,0 +1,13 @@
+**Para conectar la DB hay que ir a la clase ConexionDB y poner el usuario y contraseña del gestor de base de datos
+
+CREATE DATABASE inventario_db;
+
+USE inventario_db;
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio DOUBLE(10, 2),
+    cantidad INT
+);
